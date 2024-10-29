@@ -205,8 +205,10 @@
         const header = document.querySelector("header");
         const footer = document.querySelector("footer");
         const opacity = isVisible ? "1" : "0";
+        const backgroundColor = isVisible ? "#70e000" : "transparent";
         header.style.opacity = opacity;
         footer.style.opacity = opacity;
+        header.style.backgroundColor = backgroundColor;
       };
 
       const pageable = new Pageable("#container", {
