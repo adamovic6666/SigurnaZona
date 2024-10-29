@@ -114,11 +114,12 @@ section {
 }
 
 .companies .slick-dots {
-  bottom: -16px !important;
+  bottom: -24px !important;
 }
 
 .companies .slick-track {
   max-height: 240px !important;
+  margin-top: 16px;
 }
 
 .companies .slick-dotted.slick-slider {
@@ -177,7 +178,7 @@ section {
 
 /* PIPS */
 .pg-pips {
-  right: 12px !important;
+  right: 8px !important;
 }
 
 .pg-pips ul {
