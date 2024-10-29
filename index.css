@@ -71,7 +71,7 @@ section {
   & p {
     color: var(--blue);
     font-size: 16px;
-    max-width: 312px;
+    max-width: 304px;
     text-align: justify;
     text-justify: inter-word;
   }
@@ -174,7 +174,7 @@ section {
 
 /* PIPS */
 .pg-pips {
-  right: 16px !important;
+  right: 12px !important;
 
   & ul {
     display: flex;
@@ -192,8 +192,8 @@ section {
     }
 
     & a {
-      width: 12px !important;
-      height: 12px !important;
+      width: 8px !important;
+      height: 8px !important;
       position: relative;
       top: unset;
       left: unset !important;
