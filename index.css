@@ -71,7 +71,7 @@ section {
   & p {
     color: var(--blue);
     font-size: 16px;
-    max-width: 308px;
+    max-width: 304px;
     text-align: justify;
     text-justify: inter-word;
   }
