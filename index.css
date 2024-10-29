@@ -105,16 +105,19 @@ section {
     align-items: center;
     justify-content: center;
     max-width: 780px;
-    margin-top: 40px;
     max-height: 320px;
 
     & .slick-arrow {
       display: none !important;
     }
 
+    & .slick-dotted.slick-slider {
+      margin-bottom: 0 !important;
+    }
+
     & > div {
       max-width: 320px;
-      max-height: 320px;
+      max-height: 280px;
     }
 
     & img {
@@ -284,6 +287,10 @@ footer {
     & h2 {
       font-size: 72px;
       margin-left: 0;
+    }
+
+    & .companies {
+      margin-top: 24px;
     }
 
     & p {
