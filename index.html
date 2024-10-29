@@ -3,146 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full Screen Scroll</title>
+    <title>sigurnazona | sigurne online zajednice</title>
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/pageable@latest/dist/pageable.min.css
     "
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="sigurnazona je nova inicijativa, podržana od strane Britanske ambasade u Sarajevu i realizirana od strane TAG International. U partnerstvu sa Mrežom Mira, Centrom Civilnih Inicijativa, i drugim liderima civilnog društva u BiH, sigurnazona će razviti i distributirati niz besplatnih, inovativnih alata i resursa kako bi pomogli organizacijama civilnog društva, nevladinim organizacijama i nezavisnim medijima da ostanu sigurniji u online okruženju."
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H2NGSG0L05"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-H2NGSG0L05");
+    </script>
   </head>
   <body>
-    <div id="container">
-      <section data-anchor="Page 1">
-        <div class="flex-center">
-          <img src="./images/sigurnazona.png" alt="sigurnazona-logo" />
-        </div>
-      </section>
-      <section data-anchor="Page 2">
-        <div class="page-wrapper">
-          <div class="flex-center">
-            <div>
-              <img src="/images/pic-slide-2.png" alt="Safe online societies" />
-            </div>
-            <h2>
-              sigurne online <br />
-              zajednice.
-            </h2>
-          </div>
-        </div>
-      </section>
-      <section data-anchor="Page 3">
-        <div class="page-wrapper">
-          <div class="flex-center column">
-            <p>
-              <b>sigurnazona</b> je nova inicijativa, podržana od strane
-              Britanske ambasade u Sarajevu i realizirana od strane TAG
-              International. U partnerstvu sa Mrežom Mira, Centrom Civilnih
-              Inicijativa, i drugim liderima civilnog društva u BiH,
-              <b>sigurnazona</b> će razviti i distributirati niz besplatnih,
-              inovativnih alata i resursa kako bi pomogli organizacijama
-              civilnog društva, nevladinim organizacijama i nezavisnim medijima
-              da ostanu sigurniji u online okruženju.
-            </p>
-            <div class="companies">
-              <div>
-                <img
-                  src="/images/british-embassy.png"
-                  alt="british embassy logo"
-                />
-              </div>
-              <div><img src="./images/tag.png" alt="tag logo" /></div>
-              <div>
-                <img src="./images/mreza-mira.png" alt="mreza-mira logo" />
-              </div>
-              <div><img src="./images/cci.png" alt="cci logo" /></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section data-anchor="Page 4">
-        <div class="page-wrapper">
-          <div class="flex-center">
-            <div>
-              <img src="/images/pic-slide-4.png" alt="Safe online societies" />
-            </div>
-            <div>
-              <h2>
-                uključi se i <br />
-                saznaj više.
-              </h2>
-              <a href="mailto:adamovicslobodan@yahoo.com" target="_blank"
-                >PIŠI NAM</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
     <!-- HEADER -->
     <header>
       <div>
         <img src="./images/sigurnazona-logo.png" alt="sigurnazona-logo-dark" />
       </div>
     </header>
+    <main class="main">
+      <div id="container">
+        <section data-anchor="Page 1">
+          <div class="flex-center">
+            <img src="./images/sigurnazona.png" alt="sigurnazona-logo" />
+          </div>
+        </section>
+
+        <section data-anchor="Page 2">
+          <div class="page-wrapper">
+            <div class="flex-center">
+              <div>
+                <img
+                  src="/images/pic-slide-2.png"
+                  alt="Safe online societies"
+                />
+              </div>
+              <h2>
+                sigurne online <br />
+                zajednice.
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section data-anchor="Page 3">
+          <div class="page-wrapper">
+            <div class="flex-center column">
+              <p>
+                <b>sigurnazona</b> je nova inicijativa, podržana od strane
+                Britanske ambasade u Sarajevu i realizirana od strane TAG
+                International. U partnerstvu sa Mrežom Mira, Centrom Civilnih
+                Inicijativa, i drugim liderima civilnog društva u BiH,
+                <b>sigurnazona</b> će razviti i distributirati niz besplatnih,
+                inovativnih alata i resursa kako bi pomogli organizacijama
+                civilnog društva, nevladinim organizacijama i nezavisnim
+                medijima da ostanu sigurniji u online okruženju.
+              </p>
+              <div class="companies slider">
+                <div>
+                  <img
+                    src="/images/british-embassy.png"
+                    alt="british embassy logo"
+                  />
+                </div>
+                <div>
+                  <img src="./images/tag.png" alt="tag logo" />
+                </div>
+                <div>
+                  <img src="./images/mreza-mira.png" alt="mreza-mira logo" />
+                </div>
+                <div>
+                  <img src="./images/cci.png" alt="cci logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-anchor="Page 4">
+          <div class="page-wrapper">
+            <div class="flex-center">
+              <div>
+                <img
+                  src="/images/pic-slide-4.png"
+                  alt="Safe online societies"
+                />
+              </div>
+              <div>
+                <h2>
+                  uključi se i <br />
+                  saznaj više.
+                </h2>
+                <a href="mailto:info@sigurnazona.com" target="_blank"
+                  >PIŠI NAM</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- FOOTER -->
     <footer>
-      Copyright © 2024 Sigurnazona. Sva prava zadržana. &nbsp;
-      <a> Politika privatnosti.</a>
+      <span> Copyright © 2024 Sigurnazona. Sva prava zadržana.</span>
+      <span> <a> Politika privatnosti.</a></span>
     </footer>
-    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
-    <script>
-      const setActiveSlideBulletColor = (color) => {
-        const activeBulltet = document.querySelector(".pg-pips a.active");
-        const otherBullet = Array.from(document.querySelectorAll(".pg-pips a"));
-        otherBullet.forEach((bullet) => {
-          if (bullet !== activeBulltet) {
-            bullet.style.backgroundColor = "#fff";
-          }
-        });
-        activeBulltet.style.backgroundColor = color;
-      };
 
-      new Pageable("#container", {
-        childSelector: "[data-anchor]", // CSS3 selector string for the pages
-        anchors: [], // define the page anchors
-        pips: true, // display the pips
-        // animation: 300,
-        delay: 0, // the delay in ms before the scroll animation starts
-        // throttle: 50,
-        orientation: "vertical", // or horizontal
-        // swipeThreshold: 50,
-        freeScroll: false, // allow manual scrolling when dragging instead of automatically moving to next page
-        navPrevEl: false, // define an element to use to scroll to the previous page (CSS3 selector string or Element reference)
-        navNextEl: false, // define an element to use to scroll to the next page (CSS3 selector string or Element reference)
-        infinite: false, // enable infinite scrolling (from 0.4.0)
-        // slideshow: {
-        //   // enable slideshow that cycles through your pages automatically (from 0.4.0)
-        //   interval: 5000, // time in ms between page change,
-        //   delay: 0, // delay in ms after the interval has ended and before changing page
-        // },
-        events: {
-          wheel: true, // enable / disable mousewheel scrolling
-          mouse: true, // enable / disable mouse drag scrolling
-          touch: true, // enable / disable touch / swipe scrolling
-          keydown: true, // enable / disable keyboard navigation
-        },
-        onInit: () => {
-          if (window.location.hash === "#page-1") {
-            setActiveSlideBulletColor("#70e000");
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <!-- Pageable -->
+
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <!-- Initialize Slick Slider -->
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        function initializeSlickSlider() {
+          if (window.innerWidth <= 768) {
+            if (!$(".companies").hasClass("slick-initialized")) {
+              $(".companies").slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                prevArrow: $(".swiper-button-prev"),
+                nextArrow: $(".swiper-button-next"),
+                responsive: [
+                  {
+                    breakpoint: 600, // mobile
+                    settings: {
+                      slidesToShow: 1,
+                    },
+                  },
+                ],
+              });
+            }
           } else {
-            setActiveSlideBulletColor("#073b4c");
+            if ($(".companies").hasClass("slick-initialized")) {
+              $(".companies").slick("unslick");
+            }
           }
-        }, // callback when the instance is ready
-        onFinish: function () {
-          if (window.location.hash === "#page-1") {
-            setActiveSlideBulletColor("#70e000");
-          } else {
-            setActiveSlideBulletColor("#073b4c");
-          }
-        },
+        }
+
+        // Initialize Slick Slider on page load
+        initializeSlickSlider();
+
+        // Reinitialize Slick Slider on window resize
+        $(window).resize(function () {
+          initializeSlickSlider();
+        });
       });
     </script>
-    <script src="index.js"></script>
+
+    <script>
+      const setActiveSlideBulletColor = (color) => {
+        const bullets = document.querySelectorAll(".pg-pips a");
+        bullets.forEach((bullet) => {
+          bullet.style.backgroundColor = bullet.classList.contains("active")
+            ? color
+            : "#fff";
+        });
+      };
+
+      const updateBulletColor = () => {
+        const color =
+          window.location.hash === "#page-1" || !window.location.hash
+            ? "#70e000"
+            : "#073b4c";
+        setActiveSlideBulletColor(color);
+      };
+
+      const toggleHeaderFooterVisibility = (isVisible) => {
+        const header = document.querySelector("header");
+        const footer = document.querySelector("footer");
+        const opacity = isVisible ? "1" : "0";
+        header.style.opacity = opacity;
+        footer.style.opacity = opacity;
+      };
+
+      const pageable = new Pageable("#container", {
+        childSelector: "[data-anchor]",
+        anchors: [],
+        pips: true,
+        delay: 0,
+        orientation: "vertical",
+        freeScroll: false,
+        navPrevEl: false,
+        navNextEl: false,
+        infinite: false,
+        events: {
+          wheel: true,
+          mouse: true,
+          touch: true,
+          keydown: true,
+        },
+        onInit: ({ index }) => {
+          updateBulletColor();
+          toggleHeaderFooterVisibility(index !== 0);
+        }, // callback when the instance is ready
+        onFinish: updateBulletColor,
+        onStart: (pageId) => {
+          toggleHeaderFooterVisibility(pageId !== "page-1" || !pageId);
+        },
+      });
+
+      setTimeout(() => {
+        if (pageable.slideIndex === 0) {
+          pageable.callbacks.next();
+        }
+      }, 3000);
+    </script>
   </body>
 </html>
