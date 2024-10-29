@@ -105,9 +105,14 @@ section {
     justify-content: center;
     max-width: 780px;
     max-height: 320px;
+    margin-bottom: 0 !important;
 
     & .slick-arrow {
       display: none !important;
+    }
+
+    & .slick-track {
+      max-height: 240px !important;
     }
 
     & .slick-dotted.slick-slider {
@@ -116,12 +121,12 @@ section {
 
     & > div {
       max-width: 320px;
-      max-height: 280px;
+      max-height: 240px !important;
     }
 
     & img {
       width: 100%;
-      max-width: 420px;
+      max-width: 280px;
       height: auto;
     }
 
