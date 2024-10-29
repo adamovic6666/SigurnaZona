@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: "Gilroy Medium", sans-serif;
+  font-family: "Gilroy Medium";
   overflow-y: hidden;
   line-height: 1.5;
 }
@@ -57,7 +57,7 @@ section {
   }
 
   & h2 {
-    font-family: "Gilroy Extra Bold", sans-serif;
+    font-family: "Gilroy Extra Bold";
     font-size: 40px;
     color: var(--blue);
     text-align: left;
