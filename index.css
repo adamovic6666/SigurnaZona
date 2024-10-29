@@ -1,12 +1,14 @@
 /* import custom fonts  */
 @font-face {
   font-family: "Gilroy Extra Bold";
-  src: url("/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 700;
+  src: url("/fonts/Gilroy-ExtraBold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Gilroy Medium";
-  src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 400;
+  src: url("/fonts/Gilroy-Medium.otf") format("opentype");
 }
 
 :root {
@@ -22,9 +24,10 @@
 }
 
 body {
-  font-family: "Gilroy Medium";
+  font-family: "Gilroy Medium", sans-serif;
   overflow-y: hidden;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 .pg-wrapper {
@@ -57,12 +60,13 @@ section {
   }
 
   & h2 {
-    font-family: "Gilroy Extra Bold";
+    font-family: "Gilroy Extra Bold", sans-serif;
     font-size: 40px;
     color: var(--blue);
     text-align: left;
     line-height: 1.15;
     margin-left: 32px;
+    font-weight: 700;
   }
 
   & p {
