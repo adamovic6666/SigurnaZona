@@ -76,7 +76,7 @@ section {
 
 .flex-center p {
   color: var(--blue);
-  font-size: 14px;
+  font-size: 3.5vw;
   max-width: calc(100% - 32px);
   text-align: justify;
   text-justify: inter-word;
