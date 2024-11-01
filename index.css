@@ -12,7 +12,7 @@
 }
 
 :root {
-  --green: rgb(112, 224, 0);
+  --green: #70e000;
   --blue: #073b4c;
   --dark-gray: #333;
 }
@@ -25,9 +25,11 @@
 
 body {
   font-family: "Gilroy Medium", sans-serif;
-  overflow-y: hidden;
+  overflow: hidden;
   line-height: 1.5;
   font-weight: 400;
+  min-height: 100dvh;
+  background-color: var(--blue);
 }
 
 .pg-wrapper {
@@ -44,6 +46,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100dvh !important;
+  min-height: 100dvh;
   width: auto !important;
 }
 
@@ -56,6 +59,11 @@ section {
 
 .flex-center.column {
   flex-direction: column;
+}
+
+.flex-center.column p {
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .flex-center.column.margin-bottom-auto {
@@ -75,7 +83,7 @@ section {
 
 .flex-center p {
   color: var(--blue);
-  font-size: 3.5vw;
+  font-size: 4vw;
   max-width: calc(100% - 32px);
   text-align: justify;
   text-justify: inter-word;
@@ -94,10 +102,15 @@ section {
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 16px;
   transition: ease 0.3s;
   margin-left: 32px;
   text-transform: uppercase;
+}
+
+.flex-center p {
+  margin-top: 12px;
+  margin-left: 32px;
 }
 
 .flex-center a:hover {
@@ -150,7 +163,7 @@ section {
 
 .companies img {
   width: 100%;
-  max-width: 240px;
+  max-width: 200px;
   height: auto;
   margin: 0 auto;
 }
@@ -159,8 +172,18 @@ section {
   background-color: var(--blue);
 }
 
+#page-1 .responsive-img-mobile {
+  display: block;
+  opacity: 1 !important;
+}
+
+#page-1 .responsive-img-desktop {
+  display: none;
+}
+
 #page-1 .flex-center img {
   max-width: 240px;
+  animation: fade-in 2s ease-in;
 }
 
 /* PAGES */
@@ -273,6 +296,11 @@ footer a {
     right: 3vw;
   }
 
+  .flex-center p {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
   .pg-pips li a {
     width: 16px !important;
     height: 16px !important;
@@ -302,10 +330,12 @@ footer a {
 
   .flex-center a {
     margin-left: 0;
+    margin-top: 16px;
   }
 
   #page-1 .flex-center img {
     animation: pulse 3s ease-in;
+    max-width: 400px !important;
   }
 
   #page-4 .flex-center img,
@@ -351,16 +381,37 @@ footer a {
   .flex-center a {
     font-size: 16px;
   }
+
+  #page-1 .responsive-img-mobile {
+    display: none;
+  }
+
+  #page-1 .responsive-img-desktop {
+    display: block;
+    opacity: 1 !important;
+  }
 }
 
 @keyframes pulse {
   0% {
+    opacity: 0;
     transform: scale(1);
     filter: drop-shadow(0 0 8px #ffffff54);
   }
 
   100% {
+    opacity: 1;
     transform: scale(1.2);
     filter: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
