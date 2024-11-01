@@ -134,7 +134,7 @@ section {
 
 .companies > div {
   max-width: 320px;
-  max-height: 140px !important;
+  max-height: 150px !important;
 }
 
 .companies .slick-dots li {
