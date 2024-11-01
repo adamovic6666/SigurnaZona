@@ -124,7 +124,7 @@ section {
   justify-content: center;
   max-width: 720px;
   max-height: 320px;
-  margin-bottom: 0 !important;
+  margin: 0 auto !important;
 }
 
 .companies .slick-arrow {
