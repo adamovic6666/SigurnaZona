@@ -61,12 +61,12 @@ section {
 
 .flex-center.column.margin-bottom-auto {
   margin: 0 auto auto;
-  padding-top: 40px;
+  padding-top: 56px;
 }
 
 .flex-center h2 {
   font-family: "Gilroy Extra Bold", sans-serif;
-  font-size: 40px;
+  font-size: 10dvw;
   color: var(--blue);
   text-align: left;
   line-height: 1.15;
@@ -91,7 +91,7 @@ section {
   color: var(--green);
   padding: 8px 16px;
   border-radius: 24px;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
@@ -134,7 +134,7 @@ section {
 
 .companies > div {
   max-width: 320px;
-  max-height: 240px !important;
+  max-height: 140px !important;
 }
 
 .companies .slick-dots li {
@@ -179,7 +179,7 @@ section {
 
 #page-4 .flex-center img,
 #page-2 .flex-center img {
-  max-width: 320px;
+  max-width: 70dvw;
 }
 
 /* PIPS */
@@ -217,7 +217,7 @@ section {
 
 /* PAGE WRAPPER */
 .page-wrapper {
-  padding: 40px 16px;
+  padding: 0 16px 40px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -347,6 +347,10 @@ footer a {
   .flex-center.column.margin-bottom-auto {
     margin: auto;
     padding-top: 0;
+  }
+
+  .flex-center a {
+    font-size: 16px;
   }
 }
 
