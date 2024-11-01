@@ -61,7 +61,7 @@ section {
 
 .flex-center.column.margin-bottom-auto {
   margin: 0 auto auto;
-  padding-top: 56px;
+  padding-top: 80px;
 }
 
 .flex-center h2 {
@@ -179,7 +179,7 @@ section {
 
 #page-4 .flex-center img,
 #page-2 .flex-center img {
-  max-width: 70dvw;
+  max-width: 75dvw;
 }
 
 /* PIPS */
