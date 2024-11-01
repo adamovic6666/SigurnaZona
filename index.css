@@ -59,6 +59,11 @@ section {
   flex-direction: column;
 }
 
+.flex-center.column.margin-bottom-auto {
+  margin: 0 auto auto;
+  padding-top: 24px;
+}
+
 .flex-center h2 {
   font-family: "Gilroy Extra Bold", sans-serif;
   font-size: 40px;
@@ -93,6 +98,7 @@ section {
   margin-top: 24px;
   transition: ease 0.3s;
   margin-left: 32px;
+  text-transform: uppercase;
 }
 
 .flex-center a:hover {
@@ -336,6 +342,11 @@ footer a {
     height: 100%;
     width: 100dvw;
     max-width: 1440px;
+  }
+
+  .flex-center.column.margin-bottom-auto {
+    margin: auto;
+    padding-top: 0;
   }
 }
 
