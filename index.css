@@ -12,7 +12,7 @@
 }
 
 :root {
-  --green: #70e000;
+  --green: rgb(112, 224, 0);
   --blue: #073b4c;
   --dark-gray: #333;
 }
