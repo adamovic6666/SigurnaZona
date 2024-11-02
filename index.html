@@ -266,14 +266,10 @@
         updateBodyAndMetaThemeColor(themeColor);
       };
 
-      setTimeout(() => {
-        const footer = document.querySelector("footer");
-        footer.style.setProperty("display", "block", "important");
-      }, 200);
-
       const toggleHeaderFooterVisibility = (isVisible) => {
         const header = document.querySelector("header");
         const footer = document.querySelector("footer");
+        footer.style.setProperty("display", "block", "important");
         const opacity = isVisible ? "1" : "0";
         const backgroundColor = isVisible ? "#70e000" : "transparent";
         header.style.opacity = opacity;
