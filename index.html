@@ -164,7 +164,7 @@
                   alt="Safe online societies"
                 />
               </div>
-              <div>
+              <div class="info-section">
                 <h2>
                   uključi se i <br />
                   saznaj više.
@@ -172,6 +172,7 @@
 
                 <p>Pišite nam na ino@sigurnazona.ba</p>
                 <a
+                  class="kontakt-link"
                   href="mailto:info@sigurnazona.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -200,12 +201,12 @@
       type="text/css"
       href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
-    <!-- Pageable -->
 
     <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
     <!-- Initialize Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <!-- Pageable -->
 
     <script type="text/javascript">
       $(document).ready(function () {
@@ -245,6 +246,23 @@
           initializeSlickSlider();
         });
       });
+
+      document.querySelectorAll("a.kontakt-link").forEach((link) => {
+        link.addEventListener("click", function (event) {
+          // Prevent any default issues by ensuring the event propagates
+          if (!event.defaultPrevented) {
+            // Optional: Add any specific action you want on click
+            console.log("Link clicked:", link.href);
+          }
+        });
+
+        // For mobile devices, ensure touch events are also captured
+        link.addEventListener("touchstart", function (event) {
+          event.stopPropagation();
+          event.preventDefault();
+          link.click(); // Programmatically trigger the click
+        });
+      });
     </script>
 
     <script>
@@ -259,9 +277,11 @@
 
       const updateBodyAndMetaThemeColor = (color) => {
         document.body.style.backgroundColor = color;
-        document
-          .querySelector('meta[name="theme-color"]')
-          .setAttribute("content", color);
+        if (document.querySelector('meta[name="theme-color"]')) {
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute("content", color);
+        }
       };
 
       const updateBulletColor = () => {

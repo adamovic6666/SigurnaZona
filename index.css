@@ -122,7 +122,7 @@ section {
   gap: 16px;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
+  max-width: 840px;
   max-height: 320px;
   margin: 0 auto !important;
 }
@@ -163,7 +163,7 @@ section {
 
 .companies img {
   width: 100%;
-  width: 160px;
+  max-width: 160px;
   height: 160px;
   margin: 0 auto;
   object-fit: contain;
@@ -237,6 +237,11 @@ section {
   height: 100%;
   width: 100dvw;
   max-width: 1440px;
+}
+
+.info-section {
+  position: relative;
+  z-index: 100;
 }
 
 header,
