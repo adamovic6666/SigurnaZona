@@ -134,10 +134,19 @@
               </p>
               <div class="companies slider">
                 <div>
+                  <img src="./images/uk-embassy.png" alt="tag logo" />
+                </div>
+                <div>
+                  <img src="./images/uk-aid.png" alt="tag logo" />
+                </div>
+                <div>
                   <img src="./images/tag.png" alt="tag logo" />
                 </div>
                 <div>
                   <img src="./images/pm.png" alt="pm logo" />
+                </div>
+                <div>
+                  <img src="./images/trans.png" alt="tag logo" />
                 </div>
                 <div>
                   <img src="./images/cci.png" alt="cci logo" />
@@ -294,6 +303,7 @@
           keydown: true,
         },
         onInit: ({ index }) => {
+          updateBodyAndMetaThemeColor("#073b4c");
           updateBulletColor();
           toggleHeaderFooterVisibility(index !== 0);
         }, // callback when the instance is ready
