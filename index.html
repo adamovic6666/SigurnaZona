@@ -256,12 +256,14 @@
       };
 
       const updateBulletColor = () => {
-        const color =
+        const bulletColor =
           window.location.hash === "#page-1" || !window.location.hash
             ? "#70e000"
             : "#073b4c";
-        setActiveSlideBulletColor(color);
-        updateBodyAndMetaThemeColor(color);
+        setActiveSlideBulletColor(bulletColor);
+        const themeColor =
+          window.location.hash === "#page-1" ? "#073b4c" : "#70e000";
+        updateBodyAndMetaThemeColor(themeColor);
       };
 
       setTimeout(() => {
