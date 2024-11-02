@@ -248,12 +248,20 @@
         });
       };
 
+      const updateBodyAndMetaThemeColor = (color) => {
+        document.body.style.backgroundColor = color;
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute("content", color);
+      };
+
       const updateBulletColor = () => {
         const color =
           window.location.hash === "#page-1" || !window.location.hash
             ? "#70e000"
             : "#073b4c";
         setActiveSlideBulletColor(color);
+        updateBodyAndMetaThemeColor(color);
       };
 
       setTimeout(() => {
